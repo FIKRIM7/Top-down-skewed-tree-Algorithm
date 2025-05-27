@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="menu.css">
+    <title>Quiz</title>
+</head>
+<body>
+    
+    <!-- Quiz Container -->
+    <div class="lecture-container">
+        <h1 class="lecture-main-title">Тест: Нисходящее скошенное дерево</h1>
+        
+        <form id="quizForm" class="quiz-form">
+            <!-- Question 1 -->
+            <div class="quiz-question">
+                <h3>1. Что является основной целью использования Splay Tree?</h3>
+                <label class="quiz-option">
+                    <input type="radio" name="q1" required>
+                    <span class="option-text">Гарантировать идеальную балансировку дерева после каждой операции</span>
+                </label>
+                <label class="quiz-option correct">
+                    <input type="radio" name="q1" required>
+                    <span class="option-text">Оптимизировать доступ к часто используемым узлам</span>
+                </label>
+                <label class="quiz-option">
+                    <input type="radio" name="q1" required>
+                    <span class="option-text">Минимизировать использование памяти за счет удаления указателей</span>
+                </label>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="quiz-question">
+                <h3>2. Какая особенность операции Splay в нисходящем подходе?</h3>
+                <label class="quiz-option">
+                    <input type="radio" name="q2" required>
+                    <span class="option-text">Требует хранения ссылок на родительские узлы (parent)</span>
+                </label>
+                <label class="quiz-option correct">
+                    <input type="radio" name="q2" required>
+                    <span class="option-text">Выполняется за один проход от корня к целевому узлу</span>
+                </label>
+                <label class="quiz-option">
+                    <input type="radio" name="q2" required>
+                    <span class="option-text">Всегда использует только одиночные повороты (Zig)</span>
+                </label>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="quiz-question">
+                <h3>3. Какой метод используется для амортизированного анализа Splay Tree?</h3>
+                <label class="quiz-option">
+                    <input type="radio" name="q3" required>
+                    <span class="option-text">Агрегатный анализ</span>
+                </label>
+                <label class="quiz-option correct">
+                    <input type="radio" name="q3" required>
+                    <span class="option-text">Метод потенциалов</span>
+                </label>
+                <label class="quiz-option">
+                    <input type="radio" name="q3" required>
+                    <span class="option-text">Статистическая выборка</span>
+                </label>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="quiz-question">
+                <h3>4. В каком сценарии Splay Tree НЕ рекомендуется к использованию?</h3>
+                <label class="quiz-option">
+                    <input type="radio" name="q4" required>
+                    <span class="option-text">Кэширование данных с неравномерным доступом</span>
+                </label>
+                <label class="quiz-option correct">
+                    <input type="radio" name="q4" required>
+                    <span class="option-text">Real-time системы с жесткими требованиями к времени</span>
+                </label>
+                <label class="quiz-option">
+                    <input type="radio" name="q4" required>
+                    <span class="option-text">Динамические словари с "горячими" ключами</span>
+                </label>
+            </div>
+
+            <button type="submit" id="quizSubmit" class="quiz-submit">Проверить ответы</button>
+        </form>
+    </div>
+
+
+    <script src="quiz.js"></script>
+</body>
+</html>
